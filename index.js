@@ -74,17 +74,17 @@ document.querySelector('.nav_list_addnew').addEventListener('click', () => {
   aumento = 0;
 });
 
-function showAddBook() {
+const showAddBook = () => {
   document.getElementById('add-book').style.display = 'flex';
   document.getElementById('list-book').style.display = 'none';
   document.getElementById('contact').style.display = 'none';
-}
+};
 
-function showContact() {
+const showContact = () => {
   document.getElementById('contact').style.display = 'flex';
   document.getElementById('list-book').style.display = 'none';
   document.getElementById('add-book').style.display = 'none';
-}
+};
 
 document.querySelector('.nav_list_contact').addEventListener('click', showContact);
 document.querySelector('.nav_list_addnew').addEventListener('click', showAddBook);
